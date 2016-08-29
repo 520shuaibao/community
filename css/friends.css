@@ -161,14 +161,14 @@
 	padding-top:30px;
 }
 #demo{overflow:hidden;width:530px; margin:20px auto;overflow:hidden;}
-#demo ul{list-style-type: none;margin: 0px;padding: 0px;position:absolute; }
+#demo ul{list-style-type: none;margin: 0px;padding: 0px;position:absolute; width:1080px;}
 #demo ul li{ display:block;width:132px; height:155px; float:left; clear:none; text-align:center; line-height:30px;margin: 0px;padding: 0px;}
 #demo ul li img{ width:100px; height:120px; border:solid 2px #f1f1f1;}
 #demo ul li img:hover{
 	zoom:1.3;
 }
 #demo ul li a:hover img{border:solid 2px #F60;}
-.Productsimg{ width:500px; height:155px; margin-top:5px;overflow:hidden;position:relative;}
+.Productsimg{ width:560px; height:155px; margin-top:5px;overflow:hidden;position:relative;}
 .Productsimg ul:after
 {
 	content:"3";
