@@ -103,7 +103,7 @@
 28岁，165cm，本科<br/>
 北京 - 朝阳<br/>
 月薪：15000-20000</br/>
-对整个世界来说，你是<br/>一个人，而对一个人来<br/>说，你就是整个世界。<br/>我会在这里等着你的到<br/>...</span>
+对wo本人来说，你是<br/>一个人，而对一个人来<br/>说，你就是整个世界。<br/>我会在这里等着你的到<br/>...</span>
 
 </div>
 <div class="cls"></div>
@@ -238,19 +238,26 @@
 				</li>
 			</ul>
 		</div>
-		 <SCRIPT>
-var speed3=20//速度数值越大速度越慢
-demo2.innerHTML=demo1.innerHTML
-function Marquee(){
-if(demo2.offsetWidth-demo.scrollLeft<=0)
-demo.scrollLeft-=demo1.offsetWidth
-else{
-demo.scrollLeft++
+<script>
+var oDiv=document.getElementById("div1");
+oDiv.innerHTML=oDiv.innerHTML+oDiv.innerHTML
+function move()
+{
+    oDiv.style.left=oDiv.offsetLeft-1+"px"
+    if(oDiv.offsetLeft<-oDiv.offsetWidth/2)
+    {
+        oDiv.style.left="0"
+    }
 }
+var timer=setInterval(move,10)
+oDiv.onmouseover=function()
+{
+    clearInterval(timer)
 }
-var MyMar=setInterval(Marquee,speed3)
-demo.onmouseover=function() {clearInterval(MyMar)}
-demo.onmouseout=function() {MyMar=setInterval(Marquee,speed3)}
-</SCRIPT>
+oDiv.onmouseout=function()
+{
+    timer=setInterval(move,10)
+}
+</script>
 	</body>
 </html>
