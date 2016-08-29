@@ -168,7 +168,7 @@
 	zoom:1.3;
 }
 #demo ul li a:hover img{border:solid 2px #F60;}
-.Productsimg{ width:560px; height:155px; margin-top:5px;overflow:hidden;position:relative;}
+.Productsimg{ width:500px; height:155px; margin-top:5px;overflow:hidden;position:relative;}
 .Productsimg ul:after
 {
 	content:"3";
